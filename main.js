@@ -7,6 +7,17 @@
 //The function should never return undefined
 
 function operateOn(firstNumber, secondNumber, operation) {
+	if (operation === 0) {
+		return firstNumber + secondNumber;
+	}
+	if (operation === 1) {
+		return firstNumber * secondNumber;
+	}
+	if (operation === 2) {
+		return firstNumber / secondNumber;
+	} else {
+		return "Nothing to Operate On";
+	}
   //TODO: your code here
 }
 
@@ -17,16 +28,44 @@ function operateOn(firstNumber, secondNumber, operation) {
 //Write the function using while loop and for loop
 
 function addArraysWhileLoop(firstArray, secondArray) {
-  //TODO: your code here
+	var newArray = [];
+	var i = firstArray[i];
+	var j = secondArray[j];
+	 while (i > 0 && j > 0) { 
+	 	if ( i === j) {
+	return newArray.push(i + j);
+} else {
+	if (firstArray.length !== secondArray.length && i !== j) {
+		return newArray.push((firstArray[i]+1) + (secondArray[j]+1));
+	}
+}
+}
 }
 
 function addArraysForLoop(firstArray, secondArray) {
-  //TODO: you code here
+     	var newArray = [];
+	for (var i = 0; i < firstArray.length; i++) {
+	for (var j = 0; j < secondArray.length; j++) {
+		if (firstArray[i] === secondArray[j]) {
+			[i] = [j];
+		return newArray.push(firstArray[i] + secondArray[j]);
+		} else {
+			if (firstArray.length !== secondArray.length && firstArray[i] !== secondArray[j]);
+			return newArray.push((firstArray[i]+1) + (secondArray[j]+1));
+		}
+	
 }
-
+}
+}
 //=========================================================== 3
 //Using recursion, return the sum of all of the positives numbers of an array of numbers.
 // posSum[1,-4,7,12] => 1 + 7 + 12 = 20
+function sum(array) {
+	var sum = sum[i];
+	for (var i = 0; i < array.length; i++) {
+		return [i] + sum[i-1];
+	}
+	}
 
 //TODO: you code here
 
@@ -45,7 +84,7 @@ var bucketOfSloths = [
 // fullName(bucketOfSloths,0) //==> "Furry Danger Assassin"
 
 function fullName(array, index) {
-  //your code is here
+ return array[name];
 }
 
 //  b- Write a function that takes an array of objects (like bucketOfSloths)
@@ -56,7 +95,7 @@ function fullName(array, index) {
 // => {name: {first: "Furry", middle: "Danger", last: "Assassin"}, age: 2}
 
 function longestName(bucketOfSloths) {
-  // TODO: Your code here
+ return array.name;
 }
 
 //Good Luck :))
